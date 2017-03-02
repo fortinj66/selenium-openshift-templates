@@ -31,8 +31,6 @@ objects:
             value: ${HUB_PORT_4444_TCP_ADDR}
           - name: HUB_PORT_4444_TCP_PORT
             value: ${HUB_PORT_4444_TCP_PORT}
-          - name: REMOTE_HOST
-            value: ${REMOTE_HOST}
           image: selenium/node-firefox
           name: master
           ports:
@@ -69,9 +67,6 @@ parameters:
     value: ""
   - name: HUB_PORT_4444_TCP_PORT
     description: The Hub port to connect to
-    value: ""
-  - name: REMOTE_HOST
-    description: The remote host
     value: ""
   - name: NODE_ID
     description: Unique ID assigned to the node
